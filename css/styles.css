@@ -170,32 +170,32 @@ p {
 }
 
 .icon-container {
+    align-items: center;
     background: #f3f9fa;
-    width: 64px;
-    height: 64px;
     border-radius: 100%;
     display: inline-flex; /* above properties does not apply for inline-elements */
+    height: 64px;
     justify-content: center;
-    align-items: center;
+    width: 64px;
 }
 
 /* Buttons */
 
 .btn {
-    width: 100vw;
-    height: 5rem;
+    background: #fff;
     border-radius: 20px;
+    border: 2px solid var(---color-body-text);
+    cursor: pointer;
+    display: block;
     font-size: 1.8rem;
     font-weight: 600;
-    border: 2px solid var(---color-body-text);
-    white-space: nowrap;
-    text-transform: uppercase;
-    background: #fff;
-    display: block;
-    text-align: center;
-    cursor: pointer;
-    padding: 1.25rem;
+    height: 5rem;
     margin-bottom: 1rem;
+    padding: 1.25rem;
+    text-align: center;
+    text-transform: uppercase;
+    white-space: nowrap;
+    width: 100vw;
 }
 
 .btn--primary {
@@ -252,5 +252,26 @@ a {
 
     .btn--buynow {
         padding: 1rem;
+    }
+}
+
+/* Inputs */
+
+.input {
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    color: var(---color-headings);
+    font-size: 2rem;
+    outline: 0;
+    padding: 1.5rem 3.5rem;
+} 
+
+::placeholder {
+    color: #cdcbd7;
+}
+
+@media screen and (min-width: 1024px) {
+    .input {
+        font-size: 1.5rem;
     }
 }
