@@ -128,6 +128,7 @@ p {
 
     .badge--small {
         font-size: 1.2rem;
+        padding: .5rem 1.5rem;
     }
 }
 
@@ -145,7 +146,7 @@ p {
 }
 
 .list--tick {
-    list-style-image: url(../icons/tick.svg);
+    list-style-image: url(/images/tick.svg);
     padding-left: 3rem;
 }
 
@@ -197,7 +198,7 @@ p {
     text-align: center;
     text-transform: uppercase;
     white-space: nowrap;
-    width: 100vw;
+    width: 100%;
 }
 
 .btn--primary {
@@ -253,7 +254,8 @@ a {
     }
 
     .btn--buynow {
-        padding: 1rem;
+        width: 100%;
+        padding: 1rem 1rem 1rem 0;
     }
 }
 
@@ -316,6 +318,7 @@ a {
 .card__header,
 .card__body {
     padding: 2rem 3rem;
+    box-sizing: border-box;
 }
 
 .card--primary .card__header {
@@ -326,4 +329,72 @@ a {
 .card--secondary .card__header {
     background: var(---color-secondary);
     color: #fff;
+}
+
+.card--secondary .badge--secondary {
+    background: #02cdf1;
+}
+
+/* Plans */
+
+.plan__name {
+    display: block;
+    color: #fff;
+    margin: 0;
+    font-size: 2.4rem;
+    font-weight: 500;
+    max-width: 80%;
+}
+
+.plan__price {
+    font-size: 6rem;
+}
+
+.plan__billing-cycle {
+    font-size: 2.4rem;
+    font-weight: 300;
+    opacity: .8;
+    margin-right: 1rem;
+}
+
+.plan__description {
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    display: block;
+}
+
+.plan .list__item {
+    margin-bottom: 2rem;
+}
+
+.plan--popular .card__header {
+    position: relative;
+}
+
+.plan--popular .card__header::before {
+    content: url(/images/popular.svg);
+    display: inline-block;
+    width: 40px;
+    position: absolute;
+    top: -6px;
+    left: 85%;
+}
+
+@media screen and (min-width: 1024px) {
+    .plan__name {
+        font-size: 1.4rem;
+    }
+
+    .plan__price {
+        font-size: 5rem;
+    }
+
+    .plan__billing-cycle {
+        font-size: 1.6rem;
+    }
+
+    .plan__description {
+        font-size: 1.7rem;
+    }
 }
