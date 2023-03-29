@@ -1,3 +1,10 @@
+
+*, 
+*::after, 
+*::before {
+    box-sizing: border-box;
+}
+
 /* Color palette */
 :root {
     ---color-primary: #2584ff;
@@ -170,4 +177,80 @@ p {
     display: inline-flex; /* above properties does not apply for inline-elements */
     justify-content: center;
     align-items: center;
+}
+
+/* Buttons */
+
+.btn {
+    width: 100vw;
+    height: 5rem;
+    border-radius: 20px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    border: 2px solid var(---color-body-text);
+    white-space: nowrap;
+    text-transform: uppercase;
+    background: #fff;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    padding: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.btn--primary {
+    background: var(---color-primary);
+    color: #fff;
+    border: 0;
+}
+
+.btn--primary:hover {
+    background: #69a9fd;
+}
+
+.btn--secondary {
+    background: var(---color-secondary);
+    color: #fff;
+    border: 0;
+}
+
+.btn--secondary:hover {
+    background: #63e4fa;
+}
+
+.btn--accent {
+    background: var(---color-accent);
+    border: 0;
+    color: #fff;
+}
+
+.btn--accent:hover {
+    background: #e65430;
+}
+
+.btn:hover.btn--buynow {
+    background: var(---color-headings);
+    color: #fff;
+    border: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(---color-headings);
+    padding: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .btn {
+        width: 15rem;
+        font-size: 1.8rem;
+    }
+
+    a {
+        padding: 1rem;
+    }
+
+    .btn--buynow {
+        padding: 1rem;
+    }
 }
