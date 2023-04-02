@@ -24,7 +24,17 @@
           </p>
           <a class="btn btn--accent btn--stretched" href="#">Iniciar</a>
         </header>
-        <img class="hero__image" src="images/banner.png" alt="" />
+        <pinture>
+          <source
+            srcset="images/banner.webp 1x, images/banner@2x.webp"
+            type="image/webp"
+          />
+          <source
+            srcset="images/banner.png 1x, images/banner@2x.png"
+            type="image/png"
+          />
+          <img class="hero__image" src="images/banner.png" alt="" />
+        </pinture>
       </div>
     </section>
     <script src="js/main.js"></script>
