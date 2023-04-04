@@ -522,6 +522,11 @@ a {
     display: grid;
 }
 
+.grid--1x3 {
+    align-items: center;
+    justify-content: space-between;
+}
+
 @media screen and (min-width: 768px) {
     .grid--1x2 {
         grid-template-columns: 1fr 1fr; /* Also fine ...: repeat(2, 1fr) */
@@ -797,10 +802,7 @@ a {
 
 .block-plans {
     display: flex;
-}
-.grid--1x3 {
-    align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .block-plans .grid {
@@ -810,4 +812,38 @@ a {
 .block-plans .card {
     max-width: 500px;
     margin: 0 auto;
+}
+
+/* Features Block */
+.feature__heading {
+    margin: 0 1rem;
+}
+.block--feature {
+    gap: 2rem 2rem;
+    width: fit-content;
+    margin: 10rem 0;
+    box-sizing: border-box;
+}
+
+.block--feature p {
+    margin-bottom: 0;
+}
+
+.feature__description {
+    display: flex;
+    flex-direction: column;
+}
+
+.feature__image {
+    width: 100%;
+}
+
+.block--feature .link-arrow {
+    padding-left: 0;
+}
+
+@media screen and (min-width: 768px) {
+    .block--feature:nth-last-of-type(odd) .feature__description {
+        order: 2;
+    }
 }
