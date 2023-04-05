@@ -909,3 +909,12 @@ a {
         clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
     }
 }
+
+/* Testimonials */
+.block--testimonials .media__title {
+    color: var(---color-headings);
+}
+
+.block--testimonials .Testimonial-header__quote {
+    margin-bottom: 5rem;
+}
