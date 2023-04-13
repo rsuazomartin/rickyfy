@@ -628,6 +628,7 @@ a {
 }
 
 .collapsible__chevron {
+    opacity: 1;
     transform: rotate(-90deg);
     transition: transform .3s;
 }
@@ -671,6 +672,11 @@ a {
 .block--dark h2,
 .block--dark h3 {
     color: #fff;
+}
+
+.block--dark p {
+    color: var(---color-border);
+    opacity: .6;
 }
 
 .block--skewed-right {
@@ -917,4 +923,95 @@ a {
 
 .block--testimonials .Testimonial-header__quote {
     margin-bottom: 5rem;
+}
+
+/* Footer */
+
+.block-footer {
+    background: #232323;
+}
+
+.block-footer a {
+    color: #777;
+    transition: color .3s;
+}
+
+.block-footer a:hover {
+    color: #fff;
+
+}
+.footer__section {
+    padding: 2rem;
+    border-bottom: 2px solid #393939;
+}
+
+.footer__heading {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.block-footer .list {
+    margin: 0;
+}
+
+.list__item {
+    padding-left: 0;
+    color: #fff;
+    opacity: .8;
+    line-height: 2;
+}
+
+.footer__bottom {
+    text-align: center;
+}
+
+.footer__logo {
+    margin-top: 5rem;
+}
+
+.footer__copyright {
+    font-size: 1.5rem;
+    color: #fff;
+    opacity: .3;
+}
+
+@media screen and (min-width: 768px) {
+    .footer__sections {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+        justify-content: center;
+    }
+    
+    .footer__logo {
+        max-width: 20rem;
+        align-self: center;
+    }
+    
+    .block-footer .collapsible__chevron {
+        display: none;
+    }
+
+    .block-footer .collapsible__content {
+        max-height: 100%;
+        opacity: 1;
+    }
+
+    .footer__bottom {
+        order: -1;
+    }
+    
+    .footer__logo {
+        margin-top: 1.5rem;
+        /* TO DO LIST: Lets check if this 100% can be a rule for all images */
+        width: 100%;
+    }
+    
+    .footer__section {
+        border: 0;
+    }
+
+    .footer__heading {
+        font-size: 2rem;
+    }
+
 }

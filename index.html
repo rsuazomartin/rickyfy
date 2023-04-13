@@ -13,57 +13,115 @@
     />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/7c53c27609.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <section class="block container block--testimonials">
-      <header class="block__header">
-        <h2 class="block__heading">Que Dicen Nuestros Clientes</h2>
-        <p class="Testimonial-header__quote">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
-          consequatur esse necessitatibus.
-        </p>
-        <div class="card testimonial">
-          <div class="grid grid--1x2">
-            <div class="testimonial__image">
-              <img src="images/testimonial.jpg" alt="Happy, smiling customer" />
-              <span class="icon-container icon-container-accent icon-small">
-                <!-- para darle el sombreado alrededor -->
-                <svg class="icon icon--white">
-                  <!-- the socond class is to give color primary, secondary 
-                    or accent al icon -->
-                  <use xlink:href="images/sprite.svg#quotes"></use>
-                </svg>
-              </span>
-            </div>
-            <blockquote class="quote">
-              <p class="quote__text">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Delectus fugit quam veritatis voluptatibus veniam officia
-                aspernatur, ducimus quasi aliquid doloremque architecto hic vel
-                fuga? Dicta illo quam deleniti architecto, voluptatem labore qui
-                dolores! Dolorem ad iure suscipit, quod molestias molestiae.
-              </p>
-              <footer class="media-footer">
-                <div class="media">
-                  <div class="media__image">
-                    <!-- para darle el sombreado alrededor -->
-                    <svg class="icon icon--primaryc quote__line">
-                      <!-- the socond class is to give color primary, secondary 
-                              or accent al icon -->
-                      <use xlink:href="images/sprite.svg#line"></use>
-                    </svg>
-                  </div>
-                  <div class="media__body">
-                    <h3 class="media__title quote__author">Riccardo Suazo</h3>
-                    <p class="author__company-name">CYBERTEC, LLC</p>
-                  </div>
-                </div>
-              </footer>
-            </blockquote>
+    <footer class="block block--dark block-footer">
+      <div class="container grid footer__sections">
+        <section class="collapsible footer__section">
+          <header class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">PRODUCTOS</h2>
+            <!-- <svg class="icon">
+              <use xlink:href="images/sprite.svg#chevron"></use>
+            </svg> -->
+            <img
+              class="icon icon--white collapsible__chevron"
+              src="images/chevron.svg"
+              alt=""
+            />
+          </header>
+          <div class="collapsible__content">
+            <ul class="list">
+              <li><a class="list__item" href="#">WordPress Hosting</a></li>
+              <li>
+                <a class="list__item" href="#">Free Automated WordPress</a>
+              </li>
+              <li><a class="list__item" href="#">Migrations</a></li>
+              <li><a class="list__item" href="#">Domain Names</a></li>
+              <li><a class="list__item" href="#">Monthly Web Hosting</a></li>
+            </ul>
           </div>
-        </div>
-      </header>
-    </section>
+        </section>
+        <section class="collapsible footer__section">
+          <header class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">COMPAÑIA</h2>
+            <!-- <svg class="icon">
+              <use xlink:href="images/sprite.svg#chevron"></use>
+            </svg> -->
+            <img
+              class="icon icon--white collapsible__chevron"
+              src="images/chevron.svg"
+              alt=""
+            />
+          </header>
+          <div class="collapsible__content">
+            <ul class="list">
+              <li><a class="list__item" href="#">About</a></li>
+              <li><a class="list__item" href="#">Affiliates</a></li>
+              <li><a class="list__item" href="#">Blog</a></li>
+              <li><a class="list__item" href="#">Careers</a></li>
+              <li><a class="list__item" href="#">Community</a></li>
+              <li><a class="list__item" href="#">News</a></li>
+              <li><a class="list__item" href="#">Green Hosting</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="collapsible footer__section">
+          <header class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">SOPORTE</h2>
+            <!-- <svg class="icon">
+              <use xlink:href="images/sprite.svg#chevron"></use>
+            </svg> -->
+            <img
+              class="icon icon--white collapsible__chevron"
+              src="images/chevron.svg"
+              alt=""
+            />
+          </header>
+          <div class="collapsible__content">
+            <ul class="list">
+              <li><a class="list__item" href="#">Contact</a></li>
+              <li><a class="list__item" href="#">Knowledge Base</a></li>
+              <li><a class="list__item" href="#">Forums</a></li>
+              <li><a class="list__item" href="#">System Status</a></li>
+              <li><a class="list__item" href="#">Web Hosting</a></li>
+              <li><a class="list__item" href="#">DreamCompute</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="collapsible footer__section">
+          <header class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">DOMINIOS</h2>
+            <!-- <svg class="icon">
+              <use xlink:href="images/sprite.svg#chevron"></use>
+            </svg> -->
+            <img
+              class="icon icon--white collapsible__chevron"
+              src="images/chevron.svg"
+              alt=""
+            />
+          </header>
+          <div class="collapsible__content">
+            <ul class="list">
+              <li><a class="list__item" href="#">Domain Checker</a></li>
+              <li><a class="list__item" href="#">Domain Transfer</a></li>
+              <li><a class="list__item" href="#">Free Domain</a></li>
+              <li><a class="list__item" href="#">XYZ Domain</a></li>
+              <li><a class="list__item" href="#">Cheap SSL Certificate</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="footer__bottom">
+          <img class="footer__logo" src="images/logo.svg" alt="" />
+          <p class="footer__copyright">
+            Copyright <i class="fa-regular fa-copyright"></i> 2023 CYBERTEC
+          </p>
+        </section>
+      </div>
+    </footer>
     <script src="js/main.js"></script>
   </body>
 </html>
