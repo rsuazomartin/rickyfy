@@ -205,7 +205,7 @@ p {
 
 .btn {
     background: #fff;
-    border-radius: 20px;
+    border-radius: 30px;
     border: 2px solid var(---color-body-text);
     cursor: pointer;
     display: block;
