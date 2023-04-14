@@ -1,0 +1,66 @@
+<header>
+  <nav class="nav collapsible">
+    <a class="nav__brand" href="/"
+      ><img src="images/logo.svg" alt="Moshify logo"
+    /></a>
+    <svg class="icon icon--white nav__toggler">
+      <use xlink:href="images/sprite.svg#menu"></use>
+    </svg>
+    <ul class="list nav__list collapsible__content">
+      <li class="nav__item"><a href="#">Hosting</a></li>
+      <li class="nav__item"><a href="#">VPS</a></li>
+      <li class="nav__item"><a href="#">Domain</a></li>
+      <li class="nav__item"><a href="#">Pricing</a></li>
+    </ul>
+  </nav>
+</header>
+<section class="block block--dark block--skewed-right hero">
+  <div class="container grid grid--1x2">
+    <header class="block__header hero__content">
+      <h1 class="block__heading">Cloud Content for Pros</h1>
+      <p class="hero__tagline">Deploy your Website in less than 60 seconds.</p>
+      <a class="btn btn--accent btn--stretched" href="#">Iniciar</a>
+    </header>
+    <pinture>
+      <source
+        srcset="images/banner.webp 1x, images/banner@2x.webp"
+        type="image/webp"
+      />
+      <source
+        srcset="images/banner.png 1x, images/banner@2x.png"
+        type="image/png"
+      />
+      <img class="hero__image" src="images/banner.png" alt="" />
+    </pinture>
+  </div>
+</section>
+<section class="block container block-domain">
+  <header class="block__header">
+    <h2>Iniciand a $9 por mes</h2>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus
+      omnis eligendi
+    </p>
+  </header>
+  <div class="input-group">
+    <input
+      type="text"
+      class="input"
+      placeholder="Ingrese nombre de dominio..."
+    />
+    <button class="btn btn--accent">
+      <svg class="icon icon--white">
+        <use xlink:href="images/sprite.svg#search"></use>
+      </svg>
+      <span>Search</span>
+    </button>
+  </div>
+  <ul class="list block-domain__prices">
+    <li><span class="badge badge--secondary">.com $9</span></li>
+    <li>.sg $10</li>
+    <li>.space $11</li>
+    <li>.info $14</li>
+    <li>.net $10</li>
+    <li>.xyz $10</li>
+  </ul>
+</section>
