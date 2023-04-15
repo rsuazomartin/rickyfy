@@ -1020,7 +1020,7 @@ a {
 .block-footer .list__item {
     padding-left: 0;
     color: #fff;
-    opacity: .8;
+    opacity: .5;
     line-height: 2;
 }
 
@@ -1077,4 +1077,15 @@ a {
         font-size: 2rem;
     }
 
+    @media screen and (max-width: 1024px) {
+        .block-footer .list__item {
+            font-size: 1.8rem;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .list--inline .list__item {
+            font-size: 1.5rem;
+        }
+    }
 }
