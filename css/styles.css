@@ -208,13 +208,12 @@ p {
     border-radius: 30px;
     border: 2px solid var(---color-body-text);
     cursor: pointer;
-    display: block;
+    display: inline-block;
     font-size: 1.8rem;
     font-weight: 600;
     height: 5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0;
     outline: 0;
-    /* padding: 2rem 4vw; */
     text-align: center;
     text-transform: uppercase;
     white-space: nowrap;
@@ -231,6 +230,7 @@ p {
 .btn--stretched {
     padding-left: 3rem;
     padding-right: 3rem;
+    max-width: 20rem;
 }
 
 .btn--primary {
@@ -421,6 +421,11 @@ a {
     top: -6px;
     left: 85%;
 }
+@media screen and (max-width: 380px) {
+    .plan--popular {
+    transform: scale(1);
+    }
+}
 
 @media screen and (min-width: 1024px) {
     .plan__name {
@@ -463,6 +468,16 @@ a {
 
 .media__image {
     margin-top: 1rem;
+}
+
+@media screen and (max-width: 767px) {
+    .media:last-of-type div {
+        margin-bottom: 1rem;
+    }
+    
+    .media__body {
+        margin: 0 0 0 1rem;
+    }
 }
 
 /* Quotes */
@@ -653,7 +668,7 @@ a {
 /* Blocks */
 .block {
     --padding-vertical: 6rem; /* this property applys to .block and it´s children */
-    padding: var(--padding-vertical) 2rem;
+    padding: var(--padding-vertical) 2vh;
 }
 
 .block__header {
@@ -682,17 +697,31 @@ a {
 
 .block--skewed-right {
     padding-bottom: calc(var(--padding-vertical) + 4rem);
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);
 }
 
 .block--skewed-left {
     padding-bottom: calc(var(--padding-vertical) + 4rem);
-    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
 }
 
 .container {
     max-width: 1140px;
-    margin: 0 auto;
+    margin: 0 3vh;
+}
+
+@media screen and (max-width: 378px) {
+    .block {
+        padding: 6vh 0;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        /* max-width: 1140px; */
+        margin: 0 auto;
+    }
+    
 }
 
 /* Navigation bars */
@@ -867,12 +896,11 @@ a {
 
 .control-panel__features {
     background: #000;
-    color: #fff opacity .5;
-    
+    color: #fff opacity .5;    
 }
 
 .control-panel__master .grid {
-    grid-template-columns: 1 1fr;
+    grid-template-columns: 1fr;
 }
 
 .media__title {
@@ -881,7 +909,8 @@ a {
 }
 
 .media {
-    margin-bottom: 4rem;
+    margin-bottom: 0;
+    margin-top: 3rem;
 }
 
 .control--panel {
@@ -894,7 +923,7 @@ a {
 }
 
 .control-panel__master {
-    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 85%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 98%);
 }
 
 @media screen and (min-width: 768px) {
@@ -903,8 +932,8 @@ a {
     }
 
     .control-panel__image {
-        width: auto;
         max-width: 700px;
+        width: 100%;
         margin: 8rem 0 0;
         justify-self: end;
     }
@@ -914,7 +943,7 @@ a {
     }
 
     .control-panel__master {
-        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);
     }
 }
 
