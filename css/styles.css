@@ -488,6 +488,11 @@ a {
     line-height: 1.3;
 }
 
+.quote__text {
+    text-align: left;
+    font
+}
+
 .quote__text::before {
     content: open-quote;
 }
@@ -497,6 +502,7 @@ a {
 }
 
 .quote__author {
+    font-size: 3rem;
     font-style: normal;
     font-weight: 300;
     margin-bottom: 0;
@@ -504,7 +510,7 @@ a {
 
 .author__company-name {
     font-style: normal;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: var(---color-headings);
     opacity: .4;
 }
@@ -516,6 +522,18 @@ a {
 .quote__line {
     position: relative;
     bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .quote {
+        margin-left: 0;
+        margin-right: 0;
+        font-size: 2rem;
+    }
+
+    .quote__author {
+        font-size: 2rem;
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -581,7 +599,7 @@ a {
 @media screen and (min-width: 678px) {
     .testimonial .quote,
     .testimonial .quote__author {
-        font-size: 2.4rem;
+        font-size: 2rem;
     }
 
     .testimonial .quote {
@@ -886,6 +904,12 @@ a {
     padding-left: 0;
 }
 
+@media screen and (max-width: 768px) {
+    .feature__description {
+        margin-left: 1rem;
+    }
+}
+
 @media screen and (min-width: 768px) {
     .block--feature:nth-last-of-type(odd) .feature__description {
         order: 2;
@@ -949,13 +973,21 @@ a {
 
 /* Testimonials */
 .block--testimonials .media__title {
+    font-weight: 600;
     color: var(---color-headings);
 }
 
 .block--testimonials .Testimonial-header__quote {
-    margin-bottom: 5rem;
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
 }
 
+@media screen and (max-width: 768px) {
+    h2 {
+        font-size: 2.5rem;
+        font-weight: 700;
+    }
+}
 /* Footer */
 
 .block-footer {
