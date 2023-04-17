@@ -490,7 +490,7 @@ a {
 
 .quote__text {
     text-align: left;
-    font
+    /* font */
 }
 
 .quote__text::before {
@@ -772,8 +772,8 @@ a {
 
 .nav__toggler {
     opacity: .5;
-    transform: all .15s;
     cursor: pointer;
+    transition: opacity .15s;
 }
 
 .nav.collapsible--expanded .nav__toggler {
@@ -920,7 +920,8 @@ a {
 
 .control-panel__features {
     background: #000;
-    color: #fff opacity .5;    
+    color: #fff;
+    opacity .5;    
 }
 
 .control-panel__master .grid {
@@ -963,7 +964,7 @@ a {
     }
 
     .control-panel__master:nth-last-of-child(div) {
-        padding-bottom: 10rem;
+        padding-bottom: 6rem;
     }
 
     .control-panel__master {
@@ -1019,9 +1020,8 @@ a {
 
 .block-footer .list__item {
     padding-left: 0;
-    color: #fff;
-    opacity: .5;
-    line-height: 2;
+    color: #777;
+    line-height: 1.7;
 }
 
 .footer__bottom {
@@ -1038,54 +1038,58 @@ a {
     opacity: .3;
 }
 
+.footer__logo {
+        max-width: 20rem;
+        align-self: center;
+    }
+    
+.block-footer .collapsible__chevron {
+    display: none;
+}
+
+.block-footer .collapsible__content {
+    max-height: 100%;
+    opacity: 1;
+}
+
+.footer__bottom {
+    order: -1;
+}
+
+.footer__logo {
+    margin-top: 1.5rem;
+    /* TO DO LIST: Lets check if this 100% can be a rule for all images */
+    width: 100%;
+}
+
+.footer__section {
+    border: 0;
+}
+
+.footer__heading {
+    font-size: 2rem;
+}
+
+.footer__section > a:hover {
+    color: #fff;
+}
+
 @media screen and (min-width: 768px) {
     .footer__sections {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
         justify-content: center;
     }
-    
-    .footer__logo {
-        max-width: 20rem;
-        align-self: center;
-    }
-    
-    .block-footer .collapsible__chevron {
-        display: none;
-    }
+}
 
-    .block-footer .collapsible__content {
-        max-height: 100%;
-        opacity: 1;
+@media screen and (max-width: 1024px) {
+    .block-footer .list__item {
+        font-size: 1.8rem;
     }
+}
 
-    .footer__bottom {
-        order: -1;
-    }
-    
-    .footer__logo {
-        margin-top: 1.5rem;
-        /* TO DO LIST: Lets check if this 100% can be a rule for all images */
-        width: 100%;
-    }
-    
-    .footer__section {
-        border: 0;
-    }
-
-    .footer__heading {
-        font-size: 2rem;
-    }
-
-    @media screen and (max-width: 1024px) {
-        .block-footer .list__item {
-            font-size: 1.8rem;
-        }
-    }
-
-    @media screen and (max-width: 768px) {
-        .list--inline .list__item {
-            font-size: 1.5rem;
-        }
+@media screen and (max-width: 768px) {
+    .block-footer .list__item {
+        font-size: 1.5rem;
     }
 }
