@@ -989,6 +989,7 @@ a {
         font-weight: 700;
     }
 }
+
 /* Footer */
 
 .block-footer {
@@ -1004,6 +1005,7 @@ a {
     color: #fff;
 
 }
+
 .footer__section {
     padding: 2rem;
     border-bottom: 2px solid #393939;
@@ -1022,6 +1024,7 @@ a {
     padding-left: 0;
     color: #777;
     line-height: 1.7;
+    font-size: 1.5rem;
 }
 
 .footer__bottom {
@@ -1088,8 +1091,23 @@ a {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .block-footer .list__item {
-        font-size: 1.5rem;
+        display: none;
+        /* font-size: 1.5rem; */
+    }
+    
+    .footer__section {
+        /* padding: 2rem; */
+        border-bottom: 2px solid #393939;
+    }
+        
+    .collapsible--expanded .list__item {
+        display: block;
+        /* font-size: 1.5rem; */
+    }
+        
+    .block-footer .collapsible__chevron {
+        display: block;
     }
 }
